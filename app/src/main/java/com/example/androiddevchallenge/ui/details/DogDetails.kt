@@ -1,18 +1,3 @@
-/*
- * Copyright 2021 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.example.androiddevchallenge.ui.details
 
 import androidx.compose.foundation.layout.Column
@@ -28,10 +13,13 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.model.DogModel
 import com.example.androiddevchallenge.ui.theme.ProvideSpace
+import com.example.androiddevchallenge.ui.utils.AGE_TITLE
+import com.example.androiddevchallenge.ui.utils.DOG_BRAND
+import com.example.androiddevchallenge.ui.utils.NAME_TITLE
 import com.example.androiddevchallenge.ui.utils.NetworkImage
 
 @Composable
-fun DogDetails( selectedDog: DogModel?) {
+fun DogDetails(selectedDog: DogModel?) {
     Scaffold {
 
         val modifier = Modifier.padding(10.dp)
@@ -44,10 +32,15 @@ fun DogDetails( selectedDog: DogModel?) {
                     .fillMaxWidth()
                     .clip(RoundedCornerShape(10.dp))
             )
-            ProvideSpace()
-            Text(text = selectedDog?.name.toString())
-            ProvideSpace()
-            Text(text = selectedDog?.brand.toString())
+            ProviderDataAsPoints(text = NAME_TITLE + selectedDog?.name.toString())
+            ProviderDataAsPoints(text = DOG_BRAND + selectedDog?.brand.toString())
+            ProviderDataAsPoints(text = AGE_TITLE + selectedDog?.age.toString())
         }
     }
+}
+
+@Composable
+fun ProviderDataAsPoints(text: String) {
+    ProvideSpace()
+    Text(text = text)
 }
