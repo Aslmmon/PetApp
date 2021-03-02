@@ -82,7 +82,7 @@ val dogs = listOf(
     DogModel(
         name = "Bailey",
         brand = "FrenchBulldog",
-        image = "https://dog.ceo/api/breed/FrenchBulldog/images/random",
+        image = "https://images.dog.ceo/breeds/husky/n02110185_4522.jpg",
         id = 3,
         age = 6
     ),
@@ -103,21 +103,21 @@ val dogs = listOf(
     DogModel(
         name = "Bella",
         brand = "Borzoi",
-        image = "https://dog.ceo/api/breed/Borzoi/images/random",
+        image = "https://images.dog.ceo/breeds/saluki/n02091831_10823.jpg",
         id = 3,
         age = 14
     ),
     DogModel(
         name = "Max",
         brand = "Beagle",
-        image = "https://dog.ceo/api/breed/Beagle/images/random",
+        image = "https://images.dog.ceo/breeds/saluki/n02091831_10823.jpg",
         id = 3,
         age = 29
     ),
     DogModel(
         name = "Bentley ",
         brand = "African",
-        image = "https://dog.ceo/api/breed/African/images/random",
+        image = "https://images.dog.ceo/breeds/borzoi/n02090622_7799.jpg",
         id = 3,
         age = 7
     ),
