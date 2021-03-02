@@ -13,11 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.theme
+package com.example.androiddevchallenge.ui
 
-import androidx.compose.ui.graphics.Color
+import androidx.compose.material.Scaffold
+import androidx.compose.runtime.Composable
+import com.example.androiddevchallenge.ui.utils.NavGraph
 
-val Purple200 = Color(0xFFBB86FC)
-val Purple500 = Color(0xFF6200EE)
-val Purple700 = Color(0xFF3700B3)
-val Teal200 = Color(0xFF03DAC5)
+@Composable
+fun DogApp() {
+
+    Scaffold {
+        NavGraph()
+    }
+}

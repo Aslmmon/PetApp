@@ -21,8 +21,37 @@ The CI uses [Spotless](https://github.com/diffplug/spotless) to check if your co
 Internally, Spotless uses [ktlint](https://github.com/pinterest/ktlint) to check the formatting of your code.
 To set up ktlint correctly with Android Studio, follow one of the [listed setup options](https://github.com/pinterest/ktlint#-with-intellij-idea).
 
-Before committing your code, run `./gradlew app:spotlessApply` to automatically format your code.
+Before committing your code, run `./D` to automatically format your code.
 
+
+[comment]: <> (# Android PetDog App)
+
+[comment]: <> (<!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->)
+
+[comment]: <> (<!--- You can find both of these in the url bar when you open your repository in github. -->)
+
+[comment]: <> (![Workflow result]&#40;https://github.com/<OWNER>/<REPOSITORY>/workflows/Check/badge.svg&#41;)
+
+
+[comment]: <> (## :scroll: Description)
+
+[comment]: <> (<!--- Describe your app in one or two sentences -->)
+
+[comment]: <> (- Pet App showing list of Different Dogs with Their Details  Using Compose UI)
+
+
+[comment]: <> (## :bulb: Motivation and Context)
+
+[comment]: <> (<!--- Optionally point readers to interesting parts of your submission. -->)
+
+[comment]: <> (<!--- What are you especially proud of? -->)
+
+
+[comment]: <> (## :camera_flash: Screenshots)
+
+[comment]: <> (<!-- You can add more screenshots here if you like -->)
+
+[comment]: <> (<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">)
 ## License
 ```
 Copyright 2020 The Android Open Source Project
