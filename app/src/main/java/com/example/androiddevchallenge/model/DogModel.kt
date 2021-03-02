@@ -26,7 +26,7 @@ data class DogModel(
     val brand: String,
     val image: String,
     var id: Long,
-    var age:Int
+    var age: Int
 ) : Parcelable
 
 /**
